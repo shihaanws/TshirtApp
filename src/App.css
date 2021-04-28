@@ -1,0 +1,21 @@
+/* .App{
+    background-color: green;
+} */
+
+
+
+.project-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project-list .item{
+    width:20%;
+    height: 15%;
+}
+
+.app{
+    filter: invert(1) hue-rotate(180deg);
+}

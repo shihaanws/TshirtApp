@@ -1,0 +1,26 @@
+/* .imgWithText{
+    background-color: greenyellow;
+} */
+
+.imgWithText > p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+
+.proImage{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.item{
+    /* display: flex; */
+    /* flex-direction: row; */
+    justify-content: space-between;
+}
