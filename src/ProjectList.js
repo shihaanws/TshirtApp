@@ -29,6 +29,7 @@ const dispatch = useDispatch();
         <div className="item ">
             <div className=" card card-body" style={{width:"500px"}} >
 
+<div className="imgWithText">
 
                    <img className="img-fluid" src={`${imgBase}${design.tshirtColor}.jpg`} alt="t-shirt"/>
                       <p style={{ color:design.textColor}}>{design.upperText}</p>
@@ -36,7 +37,7 @@ const dispatch = useDispatch();
                         src={`${design.url }` || "https://i.ibb.co/vB8zC7B/tshirt.png"}
                         alt="meme-text"
                 />
-
+</div>
                    
             <button onClick={()=>removeHandler(design)} style={{alignItems:"center"}} className="btn btn-danger btn-sm ">Remove Design</button>
             
