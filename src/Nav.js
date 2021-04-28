@@ -31,7 +31,7 @@ function Nav() {
                             <a className="nav-link" href="#">Why Us <span className="sr-only">(current)</span></a>
                         </li> */}
                         <li className="nav-item">
-                            <a style={{color:"black"}} className="btn btn-outline-light start" onClick={e=> history.push('/projects')}  href="#">View Projects</a>
+                            <a style={{color:"black"}} className="btn btn-outline-light start" onClick={e=> history.push('/projects')}  href="#">View Designs</a>
                         </li>
                         <a style={{color:"black"}} className="btn btn-outline-light start" onClick={e=> history.push('/dashboard')}  href="#">Go to App</a>
 
