@@ -1,7 +1,7 @@
 const initialState = {
     designs:[
-        {id:1, name:'Project One', tshirtColor:'15000/views/front'},
-        {id:2, name:'Project two', tshirtColor:'15008/views/front'},
+//         {id:1, name:'Project One', tshirtColor:'15000/views/front'},
+//         {id:2, name:'Project two', tshirtColor:'15008/views/front'},
         // {id:2, name:'Project two', tshirtColor:'15009/views/front.jpg'},
         // {id:2, name:'Project two', tshirtColor:'15011/views/front.jpg'},
         // {id:2, name:'Project two', tshirtColor:'15013/views/front.jpg'},
