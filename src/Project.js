@@ -14,9 +14,9 @@ class Project extends Component  {
                     <div className="project-list">
                 {/* mapping all data from "designs" to "design" */}
             
-                        {designs && designs.map(t => {
+                        {designs && designs.map(design => {
                             return(
-                                <ProjectList t={t} key={t.id}  />
+                                <ProjectList design={design} key={design.id}  />
                                 )
                             })
                         }
