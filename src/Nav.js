@@ -33,7 +33,7 @@ function Nav() {
                         <li className="nav-item">
                             <a style={{color:"black"}} className="btn btn-outline-light start" onClick={e=> history.push('/projects')}  href="#">View Projects</a>
                         </li>
-                        <a style={{color:"black"}} className="btn btn-outline-light start" onClick={e=> history.push('/dashboard')}  href="#"> Go to Dashboard</a>
+                        <a style={{color:"black"}} className="btn btn-outline-light start" onClick={e=> history.push('/dashboard')}  href="#"> Go to App</a>
 
                         {/* <a className="btn btn-outline-light start "  >Start Designing</a> */}
 
