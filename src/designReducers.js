@@ -28,13 +28,13 @@ const designReducers = (state=initialState,action) => {
 
         case 'REMOVE_DESIGN':
             console.log("Remove action invoked")
-            return[
+            return{
 
                 ...state,
                 // payload:designs.filter((design)=> design.id !==design.id)
 
                 designs: state.designs.filter((design) => design.id !== action.id)
-            ]
+            }
         
 
        
