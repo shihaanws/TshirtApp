@@ -1,46 +1,39 @@
-import React,{Component} from 'react';
+import React, { Component } from "react";
 import ProjectList from "./ProjectList";
-import {connect} from "react-redux";
-import {RemoveDesign} from "./saveDesignAction" 
-
-class Project extends Component  {
-  
-    render(){
-        // console.log(this.props)
-        const {designs} = this.props
-        return (
-            <div className="container mb-5">
-                <div className="row">
-                    <div className="project-list">
-                {/* mapping all data from "designs" to "design" */}
-            
-                        {designs && designs.map(t => {
-                            return(
-                                <ProjectList t={t} key={t.id}  />
-                                )
-                            })
-                        }
+import { connect } from "react-redux";
+import { RemoveDesign } from "./saveDesignAction";
 
 
-                    </div>
-                </div>
-                
-            </div>
-        )
-    }
-   
+class Project extends Component {
+  render() {
+    const { designs } = this.props;
+    // console.log("designs--", designs);
+
+    return (
+      <div className="container mb-5">
+        <div className="row">
+          <div className="project-list">
+            {/* mapping all data from "designs" to "design" */}
+
+            {designs &&
+              designs.map((design) => {
+                return <ProjectList design={design} key={design.id} />;
+              })}
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
 
-const mapStatetoProps=(state) =>{
-    return {
-        designs: state.design.designs
-    }
-    
-}
+const mapStatetoProps = (state) => {
+  return {
+    designs: state.design.designs,
+  };
+};
 
-const mapDispatchToProps = dispatch =>({
-    removeHandler:() =>dispatch(RemoveDesign())
-})
+// const mapDispatchToProps = (dispatch) => ({
+//   removeHandler: () => dispatch(RemoveDesign()),
+// });
 
-
-export default connect(mapStatetoProps,mapDispatchToProps)(Project);
+export default connect(mapStatetoProps, null)(Project);

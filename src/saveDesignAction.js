@@ -1,28 +1,29 @@
-export const saveDesign = (design) => {
+export const saveDesign = (design,selectedId) => {
+  return (dispatch, getState) => {
+    dispatch({ type: "SAVE_DESIGN", design, selectedId });
+  };
+};
 
-    return (dispatch, getState)=> {
+/**Bug fix -- swasthika
+ * Added selectedId which was not dispatched previously
+ */
+export const RemoveDesign = (design, selectedId) => {
 
-        dispatch ({type:'SAVE_DESIGN', design})
+  return (dispatch, getState) => {
 
-    }
-}
+    dispatch({ 
 
-
-export const RemoveDesign = (design) => {
-
-    return (dispatch, getState)=> {
-
-        dispatch ({type:'REMOVE_DESIGN', design})
-    }
-}
+      type: "REMOVE_DESIGN", 
+      design,
+      selectedId });
+  };
+};
 
 //     const {
 //       designs: {designs},
 //   } = getState();
-  
- 
-    //   dispatch({
-    //       type: "REMOVE_DESIGN",
-    //       payload:designs.filter((design)=> design.id !==design.id)
-    //   })
-    
+
+//   dispatch({
+//       type: "REMOVE_DESIGN",
+//       payload:designs.filter((design)=> design.id !==design.id)
+//   })

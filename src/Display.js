@@ -2,7 +2,7 @@ import React from 'react'
 import "./Display.css"
 
 const Display = ({display, textFormat} )=> {
-    console.log(display.textColor)
+    // console.log(display.textColor)
     return (
         <div  className="card card-content">
             <div className="TshirtImage text-center">
@@ -11,7 +11,7 @@ const Display = ({display, textFormat} )=> {
                 // src= {`https://mms-images.out.customink.com/mms/images/catalog/colors/15000/views/front.jpg`}
 
                 src= {`https://mms-images.out.customink.com/mms/images/catalog/colors/${display.tshirtColor}.png`}
-                
+                alt="image"
                 />
             </div>
 

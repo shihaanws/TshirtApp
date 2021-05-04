@@ -1,6 +1,8 @@
-/* .imgWithText{
-    background-color: greenyellow;
-} */
+.imgWithText{
+    padding: 20px;
+    margin: 5px 5px 5px 5px;
+
+}
 
 .imgWithText > p{
     position: absolute;
@@ -19,8 +21,21 @@
     z-index: 1;
 }
 
-.item{
-    /* display: flex; */
-    /* flex-direction: row; */
-    justify-content: space-between;
+
+
+
+.savedItems{
+    border: 1px solid black;
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    /* justify-content: center; */
+    justify-content: space-around;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+
+
 }

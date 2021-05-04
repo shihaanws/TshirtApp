@@ -5,9 +5,13 @@ import {storage} from "./firebaseConfig";
 import {saveDesign} from './saveDesignAction';
 import { connect } from 'react-redux';
 
-class  Dashboard extends Component {
+class  Dashboard extends Component
+{
+   
 
     state={
+        
+        id:0,
         tshirtColor:'15000/views/front',
         name:'Default text',
         lowerText:'this lower',
@@ -15,7 +19,9 @@ class  Dashboard extends Component {
         url:'',
         textSize: 38,
         textColor:'white'
+
     }
+    
 
     handleTshirtColor=(e)=>{
         // console.log(e.target.id)
@@ -31,6 +37,10 @@ class  Dashboard extends Component {
 
     handleTextSize=(e)=>{
         this.setState({textSize: e.target.value})
+    }
+
+    handleId=(e)=>{
+        this.setState({id: e.target.id})
     }
 
 
@@ -74,7 +84,7 @@ class  Dashboard extends Component {
 }
     }
 
-
+    
 
 render(){
 
@@ -100,6 +110,7 @@ render(){
                     textSize={this.handleTextSize}
                     textColor={this.handleTextcolor}
                     saveDesign={this.handleSaveDesign}
+                    
                     />
                 </div>
 
