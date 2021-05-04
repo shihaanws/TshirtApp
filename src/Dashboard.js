@@ -11,7 +11,6 @@ class  Dashboard extends Component
 
     state={
         
-        id:0,
         tshirtColor:'15000/views/front',
         name:'Default text',
         lowerText:'this lower',

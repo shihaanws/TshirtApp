@@ -1,7 +1,7 @@
-import { React, useState } from "react";
+import { React } from "react";
 import "./Display.css";
 import "./ProjectList.css";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { RemoveDesign } from "./saveDesignAction";
 
 

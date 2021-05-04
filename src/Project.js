@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import ProjectList from "./ProjectList";
 import { connect } from "react-redux";
-import { RemoveDesign } from "./saveDesignAction";
+// import { RemoveDesign } from "./saveDesignAction";
 
 
 class Project extends Component {
@@ -36,4 +36,4 @@ const mapStatetoProps = (state) => {
 //   removeHandler: () => dispatch(RemoveDesign()),
 // });
 
-export default connect(mapStatetoProps, null)(Project);
+export default connect(mapStatetoProps,null)(Project);

@@ -19,21 +19,22 @@ function Nav() {
                             {/* <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Courses
         </a> */}
-                            <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                            {/* <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a className="dropdown-item" href="#">Action</a>
                                 <a className="dropdown-item" href="#">Another action</a>
                                 <div className="dropdown-divider"></div>
                                 <a className="dropdown-item" href="#">Something else here</a>
-                            </div>
+                            </div> */}
                         </li>
 
                         {/* <li className="nav-item active">
                             <a className="nav-link" href="#">Why Us <span className="sr-only">(current)</span></a>
                         </li> */}
                         <li className="nav-item">
-                            <a style={{color:"black"}} className="btn btn-outline-light start" onClick={e=> history.push('/projects')}  href="#">View Designs</a>
+                            <a style={{color:"black"}} className="btn btn-outline-light start" onClick={e=> history.push('/projects')}  href="/projects#">View Designs</a>
                         </li>
-                        <a style={{color:"black"}} className="btn btn-outline-light start" onClick={e=> history.push('/dashboard')}  href="#"> Go to App</a>
+                        <a style={{color:"black"}} className="btn btn-outline-light start" onClick={e=> history.push('/dashboard')}  href="/dashboard"> Go to App</a>
+
 
                         {/* <a className="btn btn-outline-light start "  >Start Designing</a> */}
 

@@ -11,7 +11,7 @@ const Display = ({display, textFormat} )=> {
                 // src= {`https://mms-images.out.customink.com/mms/images/catalog/colors/15000/views/front.jpg`}
 
                 src= {`https://mms-images.out.customink.com/mms/images/catalog/colors/${display.tshirtColor}.png`}
-                alt="image"
+                alt="tee-imag"
                 />
             </div>
 
