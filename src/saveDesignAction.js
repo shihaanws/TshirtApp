@@ -19,11 +19,3 @@ export const RemoveDesign = (design, id) => {
   };
 };
 
-//     const {
-//       designs: {designs},
-//   } = getState();
-
-//   dispatch({
-//       type: "REMOVE_DESIGN",
-//       payload:designs.filter((design)=> design.id !==design.id)
-//   })

@@ -1,6 +1,5 @@
 .TshirtImage{
     align-items: center;
-    /* position: relative; */
      display: flex;
      -ms-flex-direction: column;
     flex-direction: column;
@@ -8,8 +7,6 @@
      word-wrap: break-word; 
     background-color: #fff;
     background-clip: border-box;
-    /* justify-content: space-around; */
-    /* border-radius: .25rem;  */
 }
 
 .memetext{
@@ -29,7 +26,6 @@
 @media (max-width: 600px) {
     .memetext p{
         font-family: 'Girassol', cursive;
-        /* background-color: rgb(0, 0, 0); */
         padding-top: 100px;
         text-shadow: -7px 4px 24px rgba(0,0,0,1);   
              padding-right: 100px;

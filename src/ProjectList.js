@@ -5,11 +5,6 @@ import { useDispatch } from "react-redux";
 import { RemoveDesign } from "./saveDesignAction";
 
 
-// import {removeHandler} from "./Project"
-
-// const design = useSelector(state => state.design);
-// const {designs} = design;
-// const imgBase = "https://mms-images.out.customink.com/mms/images/catalog/colors/15000/views/front.jpg"
 const imgBase =
   "https://mms-images.out.customink.com/mms/images/catalog/colors/";
 
