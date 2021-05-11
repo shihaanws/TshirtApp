@@ -1,5 +1,6 @@
 .TshirtImage{
-    position: relative;
+    align-items: center;
+    /* position: relative; */
      display: flex;
      -ms-flex-direction: column;
     flex-direction: column;
@@ -7,19 +8,34 @@
      word-wrap: break-word; 
     background-color: #fff;
     background-clip: border-box;
-    border: 1px solid rgba(0,0,0,.125);
-    border-radius: .25rem; 
+    /* justify-content: space-around; */
+    /* border-radius: .25rem;  */
 }
 
 .memetext{
-    top: 590px;
-    left: 210px;
+    /* top: 590px;
+    left: 210px; */
 }
 
 .memetext p{
     font-size: 25px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Girassol', cursive;
+    text-shadow: 4px 4px 50px rgba(0,0,0,1);
+    padding-right: 200px;
+    padding-left: 200px;
 }
+
+
+@media (max-width: 600px) {
+    .memetext p{
+        font-family: 'Girassol', cursive;
+        /* background-color: rgb(0, 0, 0); */
+        padding-top: 100px;
+        text-shadow: -7px 4px 24px rgba(0,0,0,1);   
+             padding-right: 100px;
+        padding-left: 100px;
+    }
+  }
 
 
 .memetext >img{
@@ -29,6 +45,8 @@
     border-radius: 10px;
     margin-bottom: 50px;
 }
+
+
 .tshirt-color{
     display: flex;
     flex-direction: row;
@@ -41,12 +59,12 @@
     width: 15%;
     height: 15%;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Girassol&display=swap');
  .upperText{
      position: relative;
      z-index: 1;
      margin-top: -300px;
-    color: green;
+     color: green;
 } 
 
 .lowerText{
@@ -57,4 +75,17 @@ text-align: center;    margin-top: -20px;
    color: green;
 }
 
+
+.mainimg{
+    background-color: white;
+}
+
+
+.mainimg .img-responsive{
+    height: 70%;
+    width: 90%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
 

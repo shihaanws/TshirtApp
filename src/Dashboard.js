@@ -17,7 +17,7 @@ class  Dashboard extends Component
         memeimg:'',
         url:'',
         textSize: 38,
-        textColor:'white'
+        textColor:'black'
 
     }
     
@@ -78,9 +78,16 @@ class  Dashboard extends Component
 
 
     handleSaveDesign=(e)=>{
+        console.log(e.target.id)
         if(e.target.id === 'saveDesign'){
-     this.props.saveDesign(this.state)
+            this.setState({id:Math.random()},()=>{
+                this.props.saveDesign(this.state)
+
+            })
 }
+
+
+
     }
 
     

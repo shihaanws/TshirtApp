@@ -1,13 +1,13 @@
-export const saveDesign = (design,selectedId) => {
+export const saveDesign = (design,id) => {
   return (dispatch, getState) => {
-    dispatch({ type: "SAVE_DESIGN", design, selectedId });
+    dispatch({ type: "SAVE_DESIGN", design ,id});
   };
 };
 
 /**Bug fix -- swasthika
  * Added selectedId which was not dispatched previously
  */
-export const RemoveDesign = (design, selectedId) => {
+export const RemoveDesign = (design, id) => {
 
   return (dispatch, getState) => {
 
@@ -15,7 +15,7 @@ export const RemoveDesign = (design, selectedId) => {
 
       type: "REMOVE_DESIGN", 
       design,
-      selectedId });
+      id });
   };
 };
 

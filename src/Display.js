@@ -4,7 +4,7 @@ import "./Display.css"
 const Display = ({display, textFormat} )=> {
     // console.log(display.textColor)
     return (
-        <div  className="card card-content">
+        <div  className="mainimg  card card-content">
             <div className="TshirtImage text-center">
                 <img
                 className="img-responsive"
@@ -14,6 +14,8 @@ const Display = ({display, textFormat} )=> {
                 alt="tee-imag"
                 />
             </div>
+
+
 
 
             <div className="memetext text-center">

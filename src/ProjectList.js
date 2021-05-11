@@ -51,6 +51,7 @@ const ProjectList = ({ design }) => {
 
         <button
           onClick={() => removeHandler(design)}
+
           key={design.id}
           style={{ alignItems: "center" }}
           className="btn btn-danger btn-sm "

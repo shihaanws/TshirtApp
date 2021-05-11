@@ -3,8 +3,11 @@
     margin: 5px 5px 5px 5px;
 
 }
+@import url('https://fonts.googleapis.com/css2?family=Girassol&display=swap');
 
 .imgWithText > p{
+    font-family: 'Girassol', cursive;
+
     position: absolute;
     top: 50%;
     left: 50%;
