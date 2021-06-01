@@ -6,7 +6,7 @@
 
 Tshirt Dzyner is a fully responsive Tshirt designing app built using **React & Firebase**.
 
-[Try the Quiz here !](http://tshirtapp.vercel.app)
+[Try designing one for you !](http://tshirtapp.vercel.app)
 
 
 ## Tech Stack
