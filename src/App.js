@@ -20,11 +20,8 @@ function App() {
 <Router>
 
       <div>
-        <nav style={{color:"blue"}}>
-        </nav>
-
-
-
+        <nav style={{color:"blue"}}></nav>
+        
         <Switch>
           
           <Route path="/dashboard">
@@ -32,26 +29,21 @@ function App() {
             <Dashboard/>
           </Route>
 
-
-         
-
-
           <Route path="/projects">
             <Header/>
              <Project/>
           </Route>
 
-
            <Route path="/">
-          <Link to="/home"></Link>
-            
+             <Link to="/home"></Link>
               <Home/>
           </Route>
 
-
         </Switch>
+
       </div>
-    </Router>
+      
+</Router>
   
             
     </div>
