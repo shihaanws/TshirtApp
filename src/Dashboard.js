@@ -7,10 +7,7 @@ import { connect } from 'react-redux';
 
 class  Dashboard extends Component
 {
-   
-
     state={
-        
         tshirtColor:'15000/views/front',
         name:'Default text',
         lowerText:'this lower',
@@ -18,7 +15,6 @@ class  Dashboard extends Component
         url:'',
         textSize: 38,
         textColor:'black'
-
     }
     
 
@@ -103,7 +99,6 @@ render(){
                     <Display display={this.state}
                     textFormat={this.formatText()}
                     />
-                    {/* <DarkModeToggle/> */}
                     
               
                 </div>

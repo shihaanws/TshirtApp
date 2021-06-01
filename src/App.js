@@ -21,21 +21,13 @@ function App() {
 
       <div>
         <nav style={{color:"blue"}}>
-            
-            
-              {/* <Link to="/dashboard">Dashboard</Link> */}
-            {/* <Link to="/home">Home</Link> */}
-            
         </nav>
 
 
 
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
         <Switch>
           
           <Route path="/dashboard">
-            {/* <Link to="/projects">Projects Page</Link> */}
              <Header/>
             <Dashboard/>
           </Route>
@@ -61,22 +53,6 @@ function App() {
       </div>
     </Router>
   
-
-
-
-
-            {/* <Navbar/>
-            <Dashboard/> 
-
-            <Router>
-<Link to="/projects">for projs</Link>
-
-        <Route exact path="/projects">
-          <Project />
-        </Route>
-</Router> */}
-       
-
             
     </div>
     

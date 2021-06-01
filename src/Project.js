@@ -13,8 +13,9 @@ class Project extends Component {
       <div className="container mb-5">
         <div className="row">
           <div className="project-list">
-            {/* mapping all data from "designs" to "design" */}
 
+
+            {/* mapping all data from "designs" to "design" */}
             {designs &&
               designs.map((design) => {
                 return <ProjectList design={design} key={design.id} />;
@@ -32,8 +33,5 @@ const mapStatetoProps = (state) => {
   };
 };
 
-// const mapDispatchToProps = (dispatch) => ({
-//   removeHandler: () => dispatch(RemoveDesign()),
-// });
 
 export default connect(mapStatetoProps,null)(Project);

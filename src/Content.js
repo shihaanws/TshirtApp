@@ -12,15 +12,14 @@ function Content() {
                         <br />
                         <h6 className="bold-four">
                         Create Designs Instantly.
-<br/>
+                        <br/>
 
-Simply add your text and explore dozens of customized layouts.          
-          </h6>
+                        Simply add your text and explore dozens of customized layouts.          
+                        </h6>
                         <br />
                         <h6><a onClick={e=> history.push('/dashboard')} className="btn btn-primary btn-lg " href="#" >Start Designing</a></h6>
                     </div>
                     <div className="col-sm-9 img-responsive showcase-img">
-                        {/* <div className="circle"></div> */}
                     </div>
                 </div>
             </div>

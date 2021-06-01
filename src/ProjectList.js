@@ -9,11 +9,8 @@ const imgBase =
   "https://mms-images.out.customink.com/mms/images/catalog/colors/";
 
 const ProjectList = ({ design }) => {
-  // console.warn(design)
   const dispatch = useDispatch();
-  // const [design,setDesign] = useState();
 
-//   console.log(design.textColor);
 
   const removeHandler = (design) => {
     //    console.log("Design--", design);
@@ -23,8 +20,7 @@ const ProjectList = ({ design }) => {
     dispatch(RemoveDesign(design, design.id));
   };
 
-  // const Display = ({display, textFormat} )=> {
-  //     console.log(display.textColor)
+
 
   return (
     <div className="savedItems ">
