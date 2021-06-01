@@ -1,5 +1,3 @@
-
-
 const initialState={}
 const authReducers = (state=initialState,action) => {
     return state

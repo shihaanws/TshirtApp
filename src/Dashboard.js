@@ -17,7 +17,6 @@ class  Dashboard extends Component
         textColor:'black'
     }
     
-
     handleTshirtColor=(e)=>{
         // console.log(e.target.id)
        this.setState({tshirtColor: e.target.id});
@@ -56,11 +55,9 @@ class  Dashboard extends Component
             uploadTask.on('state_change',
             (snapshot)=>{
                 console.log(snapshot);
-
             },
             (error)=>{
                 console.log(error);
-
             },
             () =>{
                 storage.ref('images').child(image.name).getDownloadURL().then(url =>{
@@ -71,25 +68,17 @@ class  Dashboard extends Component
         }
     }
 
-
-
+    // ASSIGNING A RANDOM ID TO THE SAVED DESIGN
     handleSaveDesign=(e)=>{
         console.log(e.target.id)
         if(e.target.id === 'saveDesign'){
             this.setState({id:Math.random()},()=>{
                 this.props.saveDesign(this.state)
-
             })
 }
-
-
-
     }
 
-    
-
 render(){
-
 
     return (
         <div  className="container py-5">
@@ -99,8 +88,6 @@ render(){
                     <Display display={this.state}
                     textFormat={this.formatText()}
                     />
-                    
-              
                 </div>
 
                 <div className="col-lg-4">
@@ -121,7 +108,6 @@ render(){
 }
 
 }
-
 
 const mapDispatchToProps =(dispatch) =>{
     return{

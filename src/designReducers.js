@@ -7,7 +7,6 @@ const initialState = {
   ],
 };
 
-
 const designReducers = (state = initialState, action) => {
   switch (action.type) {
     case "SAVE_DESIGN":
@@ -17,7 +16,6 @@ const designReducers = (state = initialState, action) => {
         ...state,
         designs: [...state.designs, action.design],
       };
-
 
       case "REMOVE_DESIGN":
 

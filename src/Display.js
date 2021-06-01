@@ -8,15 +8,10 @@ const Display = ({display, textFormat} )=> {
             <div className="TshirtImage text-center">
                 <img
                 className="img-responsive"
-                // src= {`https://mms-images.out.customink.com/mms/images/catalog/colors/15000/views/front.jpg`}
-
                 src= {`https://mms-images.out.customink.com/mms/images/catalog/colors/${display.tshirtColor}.png`}
                 alt="tee-imag"
                 />
             </div>
-
-
-
 
             <div className="memetext text-center">
                 <div className="upperText text-center">
@@ -26,11 +21,6 @@ const Display = ({display, textFormat} )=> {
                 src={`${display.url }` || "https://i.ibb.co/vB8zC7B/tshirt.png"}
                 alt="meme-text"
                 />
-
-                {/* <div className="lowerText">
-                    <p className="text-center">Just Do it !</p>
-                </div> */}
-
             </div>
         </div>
     )

@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import ProjectList from "./ProjectList";
 import { connect } from "react-redux";
-// import { RemoveDesign } from "./saveDesignAction";
-
 
 class Project extends Component {
   render() {
@@ -13,7 +11,6 @@ class Project extends Component {
       <div className="container mb-5">
         <div className="row">
           <div className="project-list">
-
 
             {/* mapping all data from "designs" to "design" */}
             {designs &&
@@ -32,6 +29,5 @@ const mapStatetoProps = (state) => {
     designs: state.design.designs,
   };
 };
-
 
 export default connect(mapStatetoProps,null)(Project);

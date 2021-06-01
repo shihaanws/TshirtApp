@@ -20,8 +20,6 @@ const ProjectList = ({ design }) => {
     dispatch(RemoveDesign(design, design.id));
   };
 
-
-
   return (
     <div className="savedItems ">
       <div className=" card card-body" style={{ width: "500px" }}>
@@ -42,13 +40,13 @@ const ProjectList = ({ design }) => {
 
         <button
           onClick={() => removeHandler(design)}
-
           key={design.id}
           style={{ alignItems: "center" }}
           className="btn btn-danger btn-sm "
         >
           Remove Design
         </button>
+        
       </div>
     </div>
   );

@@ -17,11 +17,10 @@ function App() {
   return (
     <div className="App">
 
-<Router>
+  <Router>
 
       <div>
-        <nav style={{color:"blue"}}></nav>
-        
+        <nav style={{color:"blue"}}></nav> 
         <Switch>
           
           <Route path="/dashboard">
@@ -40,14 +39,11 @@ function App() {
           </Route>
 
         </Switch>
-
       </div>
-      
-</Router>
-  
-            
-    </div>
-    
+
+  </Router>
+              
+    </div>   
   );
 }
 
