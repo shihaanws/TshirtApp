@@ -28,14 +28,26 @@ function Settings({color,upperText, uploadImage, textSize, textColor,saveDesign}
             <input onChange={textSize} type="range" min="12" max="52"/>
             <hr/>
             <h4>Text color</h4>
-            <select onChange={textColor} className="form-control form-control-sm mb-2">
+
+
+
+
+            <div className="text-color">
+                <Button onClick={textColor} style={{width:"40px",height:"40px"}}  alt="" value="White" id="15000/views/front" variant="light"></Button>{' '}
+                <Button onClick={textColor} style={{width:"40px",height:"40px"}} alt="" value="Black" id="15008/views/front" variant="dark"></Button>               
+                <Button onClick={textColor} style={{width:"40px",height:"40px"}} alt="" value="Blue" id="15009/views/front" variant="secondary"></Button>{' '}
+                <Button onClick={textColor} style={{width:"40px",height:"40px"}} alt="" value="Red" id="15011/views/front" variant="primary"></Button>{' '}
+                <Button onClick={textColor} style={{width:"40px",height:"40px"}} alt="" value="Gray" id="15013/views/front" variant="danger"></Button>              
+            </div>
+
+            {/* <select onChange={textColor} className="form-control form-control-sm mb-2">
                 <option>White</option>
                 <option>Black</option>
                 <option>Blue</option>
                 <option>Red</option>
                 <option>Gray</option>
 
-            </select>
+            </select> */}
 
             <hr/>
             <Button onClick={saveDesign} id="saveDesign" variant="success">Save the Design</Button>{' '}
