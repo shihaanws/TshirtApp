@@ -1,4 +1,4 @@
-# 🎽Tshirt Dzyner - A Quiz App built with React!
+# 🎽Tshirt Dzyner - A Designer App built with React!
 
 ![React](https://img.shields.io/badge/React-17.0.2-61dafb)
 ![Firebase](https://img.shields.io/badge/Firebase-8.4.1-orange)
