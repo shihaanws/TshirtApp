@@ -1,36 +1,36 @@
-.TshirtImage{
+.TshirtImage {
     align-items: center;
-     display: flex;
-     -ms-flex-direction: column;
+    display: flex;
+    -ms-flex-direction: column;
     flex-direction: column;
-    min-width: 0; 
-     word-wrap: break-word; 
+    min-width: 0;
+    word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
 }
 
 
-.memetext p{
+.memetext p {
     font-size: 25px;
     font-family: 'Girassol', cursive;
-    text-shadow: 4px 4px 50px rgba(0,0,0,1);
+    text-shadow: 4px 4px 50px rgba(0, 0, 0, 1);
     padding-right: 200px;
     padding-left: 200px;
 }
 
 
 @media (max-width: 600px) {
-    .memetext p{
+    .memetext p {
         font-family: 'Girassol', cursive;
         padding-top: 100px;
-        text-shadow: -7px 4px 24px rgba(0,0,0,1);   
-             padding-right: 100px;
+        text-shadow: -7px 4px 24px rgba(0, 0, 0, 1);
+        padding-right: 100px;
         padding-left: 100px;
     }
-  }
+}
 
 
-.memetext >img{
+.memetext>img {
     position: relative;
     min-width: 10px;
     max-width: 150px;
@@ -39,7 +39,7 @@
 }
 
 
-.tshirt-color{
+.tshirt-color {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -47,37 +47,39 @@
 }
 
 
-.tshirt-color img{
+.tshirt-color img {
     width: 15%;
     height: 15%;
 }
-@import url('https://fonts.googleapis.com/css2?family=Girassol&display=swap');
- .upperText{
-     position: relative;
-     z-index: 1;
-     margin-top: -300px;
-     color: green;
-} 
 
-.lowerText{
-    margin-top:0%;
-    position: absolute;
-text-align: center;    margin-top: -20px;
+@import url('https://fonts.googleapis.com/css2?family=Girassol&display=swap');
+
+.upperText {
+    position: relative;
     z-index: 1;
-   color: green;
+    margin-top: -300px;
+    color: green;
+}
+
+.lowerText {
+    margin-top: 0%;
+    position: absolute;
+    text-align: center;
+    margin-top: -20px;
+    z-index: 1;
+    color: green;
 }
 
 
-.mainimg{
+.mainimg {
     background-color: white;
 }
 
 
-.mainimg .img-responsive{
+.mainimg .img-responsive {
     height: 70%;
     width: 90%;
     border-radius: 10px;
     display: flex;
     justify-content: center;
 }
-

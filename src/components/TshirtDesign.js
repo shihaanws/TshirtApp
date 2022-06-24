@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import ProjectList from "./ProjectList";
+import TshirtDesignList from "./TshirtDesignList";
 import { connect } from "react-redux";
 
-class Project extends Component {
+class TshirtDesign extends Component {
   render() {
     const { designs } = this.props;
     // console.log("designs--", designs);
@@ -15,7 +15,7 @@ class Project extends Component {
             {/* mapping all data from "designs" to "design" */}
             {designs &&
               designs.map((design) => {
-                return <ProjectList design={design} key={design.id} />;
+                return <TshirtDesignList design={design} key={design.id} />;
               })}
           </div>
         </div>
@@ -30,4 +30,4 @@ const mapStatetoProps = (state) => {
   };
 };
 
-export default connect(mapStatetoProps,null)(Project);
+export default connect(mapStatetoProps, null)(TshirtDesign);

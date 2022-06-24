@@ -1,11 +1,11 @@
-.imgWithText{
+.imgWithText {
     padding: 20px;
     margin: 5px 5px 5px 5px;
-
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Girassol&display=swap');
 
-.imgWithText > p{
+.imgWithText>p {
     font-family: 'Girassol', cursive;
 
     position: absolute;
@@ -15,8 +15,7 @@
     z-index: 1;
 }
 
-
-.proImage{
+.proImage {
     position: absolute;
     top: 70%;
     left: 50%;
@@ -24,12 +23,8 @@
     z-index: 1;
 }
 
-
-
-
-.savedItems{
+.savedItems {
     border: 1px solid black;
-
     display: flex;
     flex-direction: column;
     /* justify-content: space-evenly; */
@@ -39,6 +34,4 @@
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 10px;
-
-
 }

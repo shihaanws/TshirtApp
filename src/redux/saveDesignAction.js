@@ -1,6 +1,6 @@
-export const saveDesign = (design,id) => {
+export const saveDesign = (design, id) => {
   return (dispatch, getState) => {
-    dispatch({ type: "SAVE_DESIGN", design ,id});
+    dispatch({ type: "SAVE_DESIGN", design, id });
   };
 };
 
@@ -11,11 +11,12 @@ export const RemoveDesign = (design, id) => {
 
   return (dispatch, getState) => {
 
-    dispatch({ 
+    dispatch({
 
-      type: "REMOVE_DESIGN", 
+      type: "REMOVE_DESIGN",
       design,
-      id });
+      id
+    });
   };
 };
 

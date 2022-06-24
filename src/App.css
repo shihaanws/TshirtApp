@@ -3,46 +3,49 @@
 } */
 
 
-.tshirt-color{
+.tshirt-color {
     display: flex;
     justify-content: space-around;
 }
 
 
-.project-list{
+.project-list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.project-list .item{
-    width:20%;
+.project-list .item {
+    width: 20%;
     height: 15%;
 }
 
-.app{
+.app {
     filter: invert(1) hue-rotate(180deg);
 }
 
-.navbar{
+.navbar {
     font-family: 'Lato', sans-serif;
     z-index: 1;
-    box-shadow: -8px -7px 66px 9px rgba(0,0,0,0.29);
-    -webkit-box-shadow: -8px -7px 66px 9px rgba(0,0,0,0.29);
-    -moz-box-shadow: -8px -7px 66px 9px rgba(0,0,0,0.29);
+    box-shadow: -8px -7px 66px 9px rgba(0, 0, 0, 0.29);
+    -webkit-box-shadow: -8px -7px 66px 9px rgba(0, 0, 0, 0.29);
+    -moz-box-shadow: -8px -7px 66px 9px rgba(0, 0, 0, 0.29);
 }
 
-.colorheading{
+.colorheading {
     font-family: 'Lato', sans-serif;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,900&display=swap');
-.talk{
+
+.talk {
     font-family: 'Lato', sans-serif;
-        font-weight: bolder;
+    font-weight: bolder;
 
 }
-.card{
+
+.card {
     font-family: 'Lato', sans-serif;
     color: rgb(0, 0, 0);
     padding: 20px;
@@ -52,14 +55,14 @@
 
 
 @media (max-width: 600px) {
-    .card{
+    .card {
         font-family: 'Lato', sans-serif;
         color: rgb(0, 0, 0);
         display: flex;
         flex-direction: column;
         max-width: 400px;
         background-color: rgb(248, 248, 248);
-    
+
     }
-    
-  }
+
+}

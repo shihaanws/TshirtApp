@@ -1,16 +1,15 @@
 import { React } from "react";
 import "./Display.css";
-import "./ProjectList.css";
+import "./TshirtDesignList.css";
 import { useDispatch } from "react-redux";
-import { RemoveDesign } from "./saveDesignAction";
+import { RemoveDesign } from "../redux/saveDesignAction";
 
 
 const imgBase =
   "https://mms-images.out.customink.com/mms/images/catalog/colors/";
 
-const ProjectList = ({ design }) => {
+const TshirtDesignList = ({ design }) => {
   const dispatch = useDispatch();
-
 
   const removeHandler = (design) => {
     //    console.log("Design--", design);
@@ -46,10 +45,10 @@ const ProjectList = ({ design }) => {
         >
           Remove Design
         </button>
-        
+
       </div>
     </div>
   );
 };
 
-export default ProjectList;
+export default TshirtDesignList;

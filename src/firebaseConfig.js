@@ -9,12 +9,12 @@ var config = {
     storageBucket: "tshirt-aafe5.appspot.com",
     messagingSenderId: "953599999831",
     appId: "1:953599999831:web:a34c1ac08e2e71d56ec812"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(config);
+};
+// Initialize Firebase
+firebase.initializeApp(config);
 
-  const storage = firebase.storage();
+const storage = firebase.storage();
 
-  export {
-      storage, firebase as default
-  }
+export {
+    storage, firebase as default
+}
