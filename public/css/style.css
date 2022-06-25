@@ -7,8 +7,8 @@
 }
 
 .header-a {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 12px;
+    padding-bottom: 11px;
 }
 
 .alink {
@@ -40,10 +40,10 @@
 }
 
 .start {
-    border-radius: 9px;
+    /* border-radius: 9px; */
     border-width: 0.1em;
     font-size: 15px;
-    padding: 10px 20px 10px 20px;
+    /* padding: 10px 20px 10px 20px; */
     margin-left: 30px;
 }
 

@@ -14,18 +14,18 @@ function Settings({ color, upperText, uploadImage, textSize, textColor, saveDesi
                 <Button onClick={color} style={{ width: "40px", height: "40px" }} alt="" id="15011/views/front" variant="primary"></Button>{' '}
                 <Button onClick={color} style={{ width: "40px", height: "40px" }} alt="" id="15013/views/front" variant="danger"></Button>
             </div>
+            <br />
 
-            
             <h4>Text</h4>
             <input onChange={upperText} type="text" className="form-control form-control-sm mb-2" placeholder="Enter your text here"></input>
-            <hr/>
+            <hr />
             <h4>Upload an image</h4>
             <div className="form-group">
                 <input onChange={uploadImage} type="file" className="form-control-file mb-2"></input>
             </div>
             <h4>Text size</h4>
             <input onChange={textSize} type="range" min="12" max="52" />
-            <hr />
+            <br />
             <h4>Text color</h4>
             {/* <div className="text-color">
                 <Button onClick={textColor} style={{ width: "40px", height: "40px" }} alt="" value="White" id="15000/views/front" variant="light"></Button>{' '}
@@ -44,7 +44,7 @@ function Settings({ color, upperText, uploadImage, textSize, textColor, saveDesi
 
             </select>
 
-            <hr />
+            <br />
             <Button onClick={saveDesign} id="saveDesign" variant="success">Save the Design</Button>{' '}
 
         </div>
