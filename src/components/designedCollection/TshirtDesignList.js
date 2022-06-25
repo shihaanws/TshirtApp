@@ -1,8 +1,7 @@
 import { React } from "react";
-import "./Display.css";
 import "./TshirtDesignList.css";
 import { useDispatch } from "react-redux";
-import { RemoveDesign } from "../redux/saveDesignAction";
+import { RemoveDesign } from "../../redux/saveDesignAction";
 
 
 const imgBase =
@@ -13,9 +12,7 @@ const TshirtDesignList = ({ design }) => {
 
   const removeHandler = (design) => {
     //    console.log("Design--", design);
-    /**Bug fix -- swasthika
-     * Sending the selected id while dispatch
-     */
+    //  Sending the selected id while dispatch
     dispatch(RemoveDesign(design, design.id));
   };
 

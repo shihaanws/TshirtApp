@@ -1,7 +1,7 @@
 import './App.css';
-import Dashboard from './components/Dashboard'
-import TshirtDesign from "./components/TshirtDesign";
-import Home from "./components/Home";
+import Dashboard from './components/designerPage/DesignerPage'
+import TshirtDesign from "./components/designedCollection/TshirtDesign";
+import LandingPage from "./components/landingPage/LandingPage";
 import React from "react";
 import {
   BrowserRouter as Router,
@@ -10,7 +10,7 @@ import {
   Link,
 
 } from "react-router-dom";
-import Header from './components/Header';
+import Nav from './components/landingPage/Header';
 
 
 function App() {
@@ -24,18 +24,18 @@ function App() {
           <Switch>
 
             <Route path="/dashboard">
-              <Header />
+              <Nav />
               <Dashboard />
             </Route>
 
             <Route path="/projects">
-              <Header />
+              <Nav />
               <TshirtDesign />
             </Route>
 
             <Route path="/">
               <Link to="/home"></Link>
-              <Home />
+              <LandingPage />
             </Route>
 
           </Switch>

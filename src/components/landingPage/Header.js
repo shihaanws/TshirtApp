@@ -1,19 +1,18 @@
 import React from "react"
 import { useHistory } from "react-router-dom";
-import "../App.css";
+import "../../App.css";
+import DryCleaningIcon from '@mui/icons-material/DryCleaning';
 
 function Nav() {
     const history = useHistory();
-
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-primary static-top header-a">
             <div className="container nav-container">
+                <DryCleaningIcon />
                 <a onClick={e => history.push('/home')} className="navbar-brand brand" href="#">Tshirt Dzyner</a>
-
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
-
                 <div className="collapse navbar-collapse alink" id="navbarSupportedContent">
                     <ul className="navbar-nav ml-auto">
 

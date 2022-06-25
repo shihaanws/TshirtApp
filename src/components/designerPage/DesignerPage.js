@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import Display from './Display'
 import Settings from './Settings'
-import { storage } from "../firebaseConfig";
-import { saveDesign } from '../redux/saveDesignAction';
+import { storage } from "../../firebaseConfig";
+import { saveDesign } from '../../redux/saveDesignAction';
 import { connect } from 'react-redux';
 
 class Dashboard extends Component {
@@ -72,6 +72,7 @@ class Dashboard extends Component {
         console.log(e.target.id)
         if (e.target.id === 'saveDesign') {
             this.setState({ id: Math.random() }, () => {
+                console.log(this.state.id)
                 this.props.saveDesign(this.state)
             })
         }
@@ -97,7 +98,6 @@ class Dashboard extends Component {
                             textSize={this.handleTextSize}
                             textColor={this.handleTextcolor}
                             saveDesign={this.handleSaveDesign}
-
                         />
                     </div>
 

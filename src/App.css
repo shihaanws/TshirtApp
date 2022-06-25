@@ -9,14 +9,14 @@
 }
 
 
-.project-list {
+.design-list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.project-list .item {
+.design-list .item {
     width: 20%;
     height: 15%;
 }

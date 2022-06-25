@@ -1,18 +1,22 @@
+
+
+// SAVE DESIGN ACTION
 export const saveDesign = (design, id) => {
   return (dispatch, getState) => {
-    dispatch({ type: "SAVE_DESIGN", design, id });
+    dispatch({ 
+      type: "SAVE_DESIGN",
+      design,
+      id });
   };
 };
 
-/**Bug fix -- swasthika
- * Added selectedId which was not dispatched previously
- */
+// Added selectedId which was not dispatched previously
+
+
+// REMOVE DESIGN ACTION
 export const RemoveDesign = (design, id) => {
-
   return (dispatch, getState) => {
-
     dispatch({
-
       type: "REMOVE_DESIGN",
       design,
       id
