@@ -18,7 +18,7 @@ function Content() {
                         <br />
                         <h6><a onClick={e => history.push('/dashboard')} className="btn btn-primary btn-lg " href="#" >Start Designing</a></h6>
                     </div>
-                    <div className="col-sm-9 img-responsive showcase-img">
+                    <div className="col-sm-7 img-responsive showcase-img">
                     </div>
                 </div>
             </div>

@@ -20,9 +20,7 @@ const designReducers = (state = initialState, action) => {
       const index = state.designs.findIndex((a) => a.id === action.id);
       let newBasket = [...state.designs];
       console.log("Index is", index)
-
       if (index >= 0) {
-
         // At position "index" remove 1 item
         newBasket.splice(index, 1);
       } else {
@@ -30,15 +28,12 @@ const designReducers = (state = initialState, action) => {
           `Cant remove product `
         )
       }
-
       return {
         ...state,
         designs: newBasket
       }
-
     //  After dispatching the action, the id can be accessed in the reducer as action.selectedId
   
-
     default:
       return state;
   }
